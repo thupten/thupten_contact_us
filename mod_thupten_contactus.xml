@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Thupten Contact us</name>
+    <author>Thupten Choephel</author>
+    <version>1.0.0</version>
+    <description>A simple contact us module.</description>
+    <files>
+        <filename>mod_thupten_contactus.xml</filename>
+        <filename module="mod_thupten_contactus">mod_thupten_contactus.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+	<fields name="params">
+		<fieldset name="captcha0">
+			<field name="image0" type="media" directory="./" preview="true" label="select captcha image"/>
+			<field name="solution0" type="text" label="enter solution"/> 
+		</fieldset>
+		
+		<fieldset name="captcha1">
+			<field name="image1" type="media" directory="./" preview="true" label="select captcha image"/>
+			<field name="solution1" type="text" label="enter solution"/> 
+		</fieldset>
+		
+		<fieldset name="captcha2">
+			<field name="image2" type="media" directory="./" preview="true" label="select captcha image"/>
+			<field name="solution2" type="text" label="enter solution"/> 
+		</fieldset>
+		
+		<fieldset name="captcha3">
+			<field name="image3" type="media" directory="./" preview="true" label="select captcha image"/>
+			<field name="solution3" type="text" label="enter solution"/> 
+		</fieldset>
+		
+		<fieldset name="captcha4">
+			<field name="image4" type="media" directory="./" preview="true" label="select captcha image"/>
+			<field name="solution4" type="text" label="enter solution"/> 
+		</fieldset>
+		
+		<fieldset name="forward_to">
+			<field name="forward_to_email" type="email" label="enter email address to which the form information will be sent to"/> 
+		</fieldset>
+
+		<fieldset name="subject">
+			<field name="email_subject" type="text" label="subject for emails. eg. customer inquiry, prospect questions"/> 
+		</fieldset>
+		
+		
+	</fields>
+    </config>
+</extension>
