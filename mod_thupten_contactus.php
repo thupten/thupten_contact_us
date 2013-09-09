@@ -16,7 +16,8 @@
 defined( '_JEXEC' ) or die( 'Restricted access' );
 // Include the syndicate functions only once
 require_once( dirname(__FILE__).'/helper.php' );
+require_once( dirname(__FILE__).'/thupcaptcha.class.php' );
  
 $model = modThuptenContactUsHelper::getContactUs( $params );
-
+$captcha_image_path = ThupCaptcha::getRandomImage();
 require( JModuleHelper::getLayoutPath( 'mod_thupten_contactus' ) );
